@@ -31,6 +31,6 @@ console.log(`Maior altura = ${maior.toFixed(2)}`);
 if (contMulheres > 0) {
   console.log(`Media das alturas das mulheres = ${(somaMulheres / contMulheres).toFixed(2)}`);
 } else {
-  console.log("Nao ha mulheres cadastradas.");
+  console.log("Não ha mulheres cadastradas.");
 }
 console.log(`Numero de homens = ${contHomens}`);
