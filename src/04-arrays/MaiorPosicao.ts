@@ -8,7 +8,8 @@ for (let i = 0; i < n; i++) {
   vetor.push(Number(prompt("Digite um numero: ")));
 }
 
-console.log("NUMEROS NEGATIVOS:");
-for (const v of vetor) {
-  if (v < 0) console.log(v);
-}
+const maior = Math.max(...vetor);
+const pos = vetor.indexOf(maior);
+
+console.log(`MAIOR VALOR = ${maior}`);
+console.log(`POSICAO DO MAIOR VALOR = ${pos}`);

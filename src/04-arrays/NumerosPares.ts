@@ -8,7 +8,7 @@ for (let i = 0; i < n; i++) {
   vetor.push(Number(prompt("Digite um numero: ")));
 }
 
-console.log("NUMEROS NEGATIVOS:");
-for (const v of vetor) {
-  if (v < 0) console.log(v);
-}
+const pares = vetor.filter(v => v % 2 === 0);
+console.log("NUMEROS PARES:");
+console.log(pares.join(" "));
+console.log(`QUANTIDADE DE PARES = ${pares.length}`);

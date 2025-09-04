@@ -8,7 +8,9 @@ for (let i = 0; i < n; i++) {
   vetor.push(Number(prompt("Digite um numero: ")));
 }
 
-console.log("NUMEROS NEGATIVOS:");
-for (const v of vetor) {
-  if (v < 0) console.log(v);
-}
+const soma = vetor.reduce((a, b) => a + b, 0);
+const media = soma / vetor.length;
+
+console.log("VALORES =", vetor.join(" "));
+console.log(`SOMA = ${soma.toFixed(2)}`);
+console.log(`MEDIA = ${media.toFixed(2)}`);
